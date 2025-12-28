@@ -170,6 +170,38 @@ body {
   text-align: center;
 }
 
+.testimonials {
+  padding: 4rem 0;
+  background-color: #f3f4f6;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-rating {
+  color: #f5b301;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #333;
+}
   
 @media (min-width: 768px) {
   .hero-text h2 {
@@ -177,6 +209,10 @@ body {
   }
 
   .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
